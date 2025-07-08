@@ -1,0 +1,18 @@
+.loading-heartbeat {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: var(--color-background-default);
+  display: none;
+  pointer-events: none;
+}
+
+.loading-heartbeat--active {
+  display: block;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%,100% { opacity: 0.2; }
+  50% { opacity:1; }
+}
