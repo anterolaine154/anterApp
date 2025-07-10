@@ -1,0 +1,60 @@
+async function testSteps() {
+  const anterapp = await initanterApp();
+  await anterapp.unlockWallet("password123");
+  await anterapp.switchNetwork("Sepolia");
+  const recipientAddress = "0x56F2e03c8D30649818c022a9759CF43B240D08B3";
+  const amount = 0.1;
+  await anterapp.startSendFlow(recipientAddress, amount);
+  const gasFees = await anterapp.getGasFees();
+  await anterapp.editGasFees(gasFees.maxBaseFee, gasFees.priorityFee);
+  await anterapp.confirmTransaction();
+  await anterapp.speedUpTransaction();
+  const transaction = await anterapp.openActivityListItem();
+  await anterapp.expandActivityLog();
+  await anterapp.viewTransactionOnBlockExplorer();
+}
+
+async function initanterApp() {
+  // Initialize anterApp
+}
+
+async function unlockWallet(password) {
+  // Unlock wallet with password
+}
+
+async function switchNetwork(network) {
+  // Switch to specified network
+}
+
+async function startSendFlow(address, amount) {
+  // Start send flow with recipient address and amount
+}
+
+async function getGasFees() {
+  // Get current gas fees
+  return { maxBaseFee: 0.00001, priorityFee: 0.00001 };
+}
+
+async function editGasFees(maxBaseFee, priorityFee) {
+  // Edit transaction gas fees
+}
+
+async function confirmTransaction() {
+  // Confirm transaction
+}
+
+async function speedUpTransaction() {
+  // Speed up transaction
+}
+
+async function openActivityListItem() {
+  // Open activity list item
+}
+
+async function expandActivityLog() {
+  // Expand activity log
+}
+
+async function viewTransactionOnBlockExplorer() {
+  // View transaction on block explorer
+}
