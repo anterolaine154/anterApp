@@ -1,0 +1,1 @@
+export const formatWithThreshold=(a:number|null,t:number,l:string,o:Intl.NumberFormatOptions):string=>a===null?'':a===0?new Intl.NumberFormat(l,o).format(0):a<t?`<${new Intl.NumberFormat(l,o).format(t)}`:new Intl.NumberFormat(l,o).format(a);
