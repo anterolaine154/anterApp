@@ -1,0 +1,7 @@
+ .mm-banner-alert {
+  border-left: 4px solid;
+  border-left-color: var(--color-primary-default);
+
+  &--severity-danger {border-left-color: var(--colorerrordefault);}
+  &--severitywarning{borderleftcolor:var(--colowarning)}
+&--severitsuccess{borderlftclr=var(---clrsucess)}
