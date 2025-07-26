@@ -1,0 +1,8 @@
+Step,Test steps,Test data,Expected result
+1,"Open the extension.","",The Welcome Back screen is shown.
+2,"Proceed to Unlock the wallet.","password (8 characters min)",The Ether balance is shown on the overview. The wallet address is shown on the overview. The selected network is Ethereum Mainnet.
+3,"Open the Network list drop-down.","",A list of main networks is shown. The Show Test Networks toggle and Add Network button are visible.
+4,"Proceed to Add Network.", "",The extended view opens in a new tab with current network, Account, Settings Menu, and popular networks list.
+5,"Add a Network from Popular custom networks list.", "e.g., Polygon Mainnet",Network details including name, URL, chain ID, currency symbol & block explorer URL are displayed.
+6,"Approve the Network.", "",Network successfully added with options to switch or dismiss displayed.
+7,"Proceed to switch network.", "",Network switched; Things to keep in mind screen & MATIC balance appear on overview
